@@ -5,14 +5,14 @@ const Characters = ({characters}) => {
         <div className="container">
             {characters.map((item, index) => (
                 <div className="card" key={index}>
-                    <img src={item.image} alt="" />
-                    <div>
-                        <h2 className="name shown">{item.name}</h2>
-                        <div className="not-shown">gender: {item.gender}</div>
-                        <div className="not-shown">species: {item.species}</div>
-                        <div className="not-shown">status: {item.status}</div>
-                        <div className="not-shown">origin: {item.origin.name}</div>
-                        <div className="not-shown">location: {item.location.name}</div>
+                    <h2 className="card-name">{item.name}</h2>
+                    <img className="card-img" src={item.image} alt="" />
+                    <div className="card-info">
+                        <div className="info">gender: {item.gender}</div>
+                        <div className="info">species: {item.species}</div>
+                        <div className="info">status: {item.status}</div>
+                        <div className="info">origin: {item.origin.name}</div>
+                        <div className="info">location: {item.location.name}</div>
                     </div>
                 </div>
             ))}

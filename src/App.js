@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
 import Characters from './components/Characters';
 import Button from "./components/button";
@@ -38,10 +38,12 @@ function App() {
 
   return (
     <React.Fragment>
-      <NavBar onHome={onHome}/>
+      <NavBar onHome={onHome} />
       <div>
         <Button prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
-        <Characters characters= {characters}/>
+        <div>
+          <Characters characters={characters} />
+        </div>
         <Button prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
       </div>
     </React.Fragment>

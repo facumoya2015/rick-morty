@@ -10,17 +10,27 @@ const Button = ({prev, next, onPrevious, onNext }) => {
         onNext();
     }
 
+    const clickPrev = () => {
+        goToPrevious();
+        window.scrollTo(0, 0)
+    }
+
+    const clickNext = () => {
+        goToNext();
+        window.scrollTo(0, 0)
+    }
+
     return (
         <nav>
-            <ul>
+            <ul className="buttons">
                 {prev ? (
                     <li>
-                        <button onClick={goToPrevious}>Previous</button>
+                        <button className="button" onClick={clickPrev} >Previous</button>
                     </li>
                 ) : null}
                 {next ? (
                     <li>
-                        <button onClick={goToNext}>Next</button>
+                        <button className="button" onClick={clickNext}>Next</button>
                     </li>
                 ) : null}
             </ul>

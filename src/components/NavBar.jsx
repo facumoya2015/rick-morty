@@ -7,9 +7,9 @@ export default function NavBar({onHome}) {
     } 
 
     return (
-        <nav>
+        <nav className="nav">
             <div>
-                <h2 onClick={goToHome}>Home</h2>
+                <img className="imagen-inicio" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="" onClick={goToHome}/>
             </div>
         </nav>
     )
