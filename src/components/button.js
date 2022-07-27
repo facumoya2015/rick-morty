@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({prev, next, onPrevious, onNext }) => {
+const Button = ({ prev, next, onPrevious, onNext }) => {
 
     const goToPrevious = () => {
         onPrevious();
@@ -21,19 +21,13 @@ const Button = ({prev, next, onPrevious, onNext }) => {
     }
 
     return (
-        <nav>
-            <ul className="buttons">
-                {prev ? (
-                    <li>
-                        <button className="button" onClick={clickPrev} >Previous</button>
-                    </li>
-                ) : null}
-                {next ? (
-                    <li>
-                        <button className="button" onClick={clickNext}>Next</button>
-                    </li>
-                ) : null}
-            </ul>
+        <nav className="buttons">
+            {prev ? (
+                <button className="button" onClick={clickPrev} >Previous</button>
+            ) : null}
+            {next ? (
+                <button className="button" onClick={clickNext}>Next</button>
+            ) : null}
         </nav>
     )
 }
