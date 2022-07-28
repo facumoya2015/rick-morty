@@ -4,6 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   align-items: center;
+  background-color: #42b4ca;
+  background-image: url("https://images.alphacoders.com/876/876589.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 code {
