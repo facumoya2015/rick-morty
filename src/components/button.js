@@ -23,10 +23,12 @@ const Button = ({ prev, next, onPrevious, onNext }) => {
     return (
         <nav className="buttons">
             {prev ? (
-                <button className="button" onClick={clickPrev} >Previous</button>
+                // <button className="button" onClick={clickPrev} >Previous</button>
+                <img src={require("./prev.png")} alt="" className="left" onClick={clickPrev}/>
             ) : null}
             {next ? (
-                <button className="button" onClick={clickNext}>Next</button>
+                // <button className="button" onClick={clickNext}>Next</button>
+                <img src={require("./next.png")} alt="" className="right" onClick={clickNext}/>
             ) : null}
         </nav>
     )

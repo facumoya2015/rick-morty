@@ -99,6 +99,18 @@
   background-color: #bfde42;
 }
 
+.right {
+  height: 50px;
+  width: 120px;
+  margin-left: 20px;
+}
+
+.left {
+  height: 50px;
+  width: 120px;
+  margin-right: 20px;
+}
+
 .card-img:hover {
   opacity: 0;
   
@@ -108,9 +120,9 @@
   cursor: pointer;
 }
 
-.button:active {
+/* .button:active {
   background-color: #a5be3d;
-}
+} */
 
 
 /* @keyframes App-logo-spin {
